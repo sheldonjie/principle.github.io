@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+## <span id="back">Priciples of Communications</span> ##
 
-You can use the [editor on GitHub](https://github.com/sheldonjie/principle.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### [*<<Index*](http://sheldonjie.github.io/)
+----------
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 信道容量
 
-### Markdown
+香农定理给出了信道信息传送速率的上限（比特每秒）和信道信噪比及带宽的关系。香农定理可以解释现代各种无线制式由于带宽不同，所支持的单载波最大吞吐量的不同。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+在被高斯白噪声干扰的信道中，传送的最大信息速率C由下述公式确定：
 
-```markdown
-Syntax highlighted code block
+C=B*log₂（1+S/N) （bit/s)>
 
-# Header 1
-## Header 2
-### Header 3
+> C是信道支持的最大速度(信道容量)；B是信道的带宽；S是平均信号功率；N是平均噪声功率；S/N即信噪比。
 
-- Bulleted
-- List
+理解香农公式须注意以下几点：
 
-1. Numbered
-2. List
+（1）信道容量由带宽及信噪比决定，增大带宽、提高信噪比可以增大信道容量；
 
-**Bold** and _Italic_ and `Code` text
+（2）在要求的信道容量一定的情况下，提高信噪比可以降低带宽的需求，增加带宽可以降低信噪比的需求；
 
-[Link](url) and ![Image](src)
-```
+（3）香农公式给出了信道容量的极限，也就是说，实际无线制式中单信道容量不可能超过该极限，只能尽量接近该极限。在卷积编码条件下，实际信道容量离香农极限还差3dB；在Turbo编码的条件下，接近了香农极限。
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+（4）LTE中多天线技术没有突破香农公式，而是相当于多个单信道的组合。
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sheldonjie/principle.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<br>
+[*^Back to Top^*](#back)
